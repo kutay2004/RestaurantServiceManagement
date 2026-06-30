@@ -1,0 +1,148 @@
+﻿@page "/orders/edit"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Edit Order</PageTitle>
+
+<h1>Edit Order</h1>
+
+<h2>Order</h2>
+<hr />
+
+@if (Order is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm Model="FormModel" OnValidSubmit="UpdateOrder" FormName="EditOrderForm">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="mb-3">
+                    <label class="form-label">Order ID:</label>
+                    <input class="form-control" value="@Order.OrderID" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Date:</label>
+                    <input class="form-control" value="@Order.Date.ToString("dd.MM.yyyy HH:mm")" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Total Amount:</label>
+                    <input class="form-control" value="@Order.TotalAmount" disabled />
+                    <small class="text-muted">Total amount is calculated from order details.</small>
+                </div>
+
+                <div class="mb-3">
+                    <label for="customerid" class="form-label">Customer:</label>
+                    <InputSelect id="customerid" TValue="int" @bind-Value="FormModel.CustomerID" class="form-control">
+                        @foreach (var customer in customers)
+                        {
+                            <option value="@customer.CustomerID">@customer.Name</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label for="employeeid" class="form-label">Employee:</label>
+                    <InputSelect id="employeeid" TValue="int" @bind-Value="FormModel.EmployeeID" class="form-control">
+                        @foreach (var employee in employees)
+                        {
+                            <option value="@employee.EmployeeID">@employee.Name - @employee.Role</option>
+                        }
+                    </InputSelect>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Last Modified:</label>
+                    <input class="form-control" value="@Order.LastModified" disabled />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a href="/orders" class="btn btn-secondary">Back to List</a>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [SupplyParameterFromQuery]
+    private int OrderID { get; set; }
+
+    [SupplyParameterFromForm]
+    private OrderEditModel FormModel { get; set; } = new();
+
+    private Order? Order { get; set; }
+
+    private List<Customer> customers = new();
+    private List<Employee> employees = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        customers = await context.Customer
+            .OrderBy(customer => customer.Name)
+            .ToListAsync();
+
+        employees = await context.Employee
+            .OrderBy(employee => employee.Name)
+            .ToListAsync();
+
+        Order = await context.Order
+            .Include(order => order.Customer)
+            .Include(order => order.Employee)
+            .FirstOrDefaultAsync(order => order.OrderID == OrderID);
+
+        if (Order is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+            return;
+        }
+
+        if (FormModel.CustomerID == 0)
+        {
+            FormModel.CustomerID = Order.CustomerID;
+        }
+
+        if (FormModel.EmployeeID == 0)
+        {
+            FormModel.EmployeeID = Order.EmployeeID;
+        }
+    }
+
+    private async Task UpdateOrder()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        var orderToUpdate = await context.Order
+            .FirstOrDefaultAsync(order => order.OrderID == OrderID);
+
+        if (orderToUpdate is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+            return;
+        }
+
+        orderToUpdate.CustomerID = FormModel.CustomerID;
+        orderToUpdate.EmployeeID = FormModel.EmployeeID;
+        orderToUpdate.LastModified = DateTime.Now;
+
+        await context.SaveChangesAsync();
+
+        NavigationManager.NavigateTo("/orders");
+    }
+
+    public class OrderEditModel
+    {
+        public int CustomerID { get; set; }
+        public int EmployeeID { get; set; }
+    }
+}

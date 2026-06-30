@@ -1,0 +1,103 @@
+﻿@page "/orders/create"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Create Order</PageTitle>
+
+<h1>Create Order</h1>
+
+<h2>Order</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <EditForm method="post" Model="Order" OnValidSubmit="AddOrder" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" role="alert" />
+
+            <div class="mb-3">
+                <label for="customerid" class="form-label">Customer:</label>
+                <InputSelect id="customerid" TValue="int" @bind-Value="Order.CustomerID" class="form-control">
+                    <option value="0">Select Customer</option>
+                    @foreach (var customer in customers)
+                    {
+                        <option value="@customer.CustomerID">@customer.Name</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => Order.CustomerID" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label for="employeeid" class="form-label">Employee:</label>
+                <InputSelect id="employeeid" TValue="int" @bind-Value="Order.EmployeeID" class="form-control">
+                    <option value="0">Select Employee</option>
+                    @foreach (var employee in employees)
+                    {
+                        <option value="@employee.EmployeeID">@employee.Name - @employee.Role</option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => Order.EmployeeID" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Date:</label>
+                <input value="@Order.Date.ToString("dd.MM.yyyy HH:mm")" class="form-control" disabled />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Total Amount:</label>
+                <input value="@Order.TotalAmount" class="form-control" disabled />
+                <small class="text-muted">Total amount will be calculated from order details later.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <a href="/orders">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromForm]
+    private Order Order { get; set; } = new()
+    {
+        Date = DateTime.Now,
+        TotalAmount = 0,
+        LastModified = DateTime.Now
+    };
+
+    private List<Customer> customers = new();
+    private List<Employee> employees = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        customers = await context.Customer
+            .OrderBy(customer => customer.Name)
+            .ToListAsync();
+
+        employees = await context.Employee
+            .OrderBy(employee => employee.Name)
+            .ToListAsync();
+    }
+
+    private async Task AddOrder()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        Order.Date = DateTime.Now;
+        Order.TotalAmount = 0;
+        Order.LastModified = DateTime.Now;
+
+        context.Order.Add(Order);
+        await context.SaveChangesAsync();
+
+        NavigationManager.NavigateTo("/orders");
+    }
+}

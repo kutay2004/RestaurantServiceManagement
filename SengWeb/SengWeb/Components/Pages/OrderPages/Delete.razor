@@ -1,0 +1,147 @@
+﻿@page "/orders/delete"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Delete Order</PageTitle>
+
+<h1>Delete Order</h1>
+
+<p>Are you sure you want to delete this order?</p>
+
+@if (order is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div>
+        <h2>Order #@order.OrderID</h2>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-2">Customer</dt>
+            <dd class="col-sm-10">@(order.Customer?.Name ?? "No Customer")</dd>
+
+            <dt class="col-sm-2">Employee</dt>
+            <dd class="col-sm-10">@(order.Employee?.Name ?? "No Employee")</dd>
+
+            <dt class="col-sm-2">Date</dt>
+            <dd class="col-sm-10">@order.Date</dd>
+
+            <dt class="col-sm-2">Total Amount</dt>
+            <dd class="col-sm-10">@order.TotalAmount</dd>
+
+            <dt class="col-sm-2">Last Modified</dt>
+            <dd class="col-sm-10">@order.LastModified</dd>
+        </dl>
+
+        <h3>Products in this Order</h3>
+
+        @if (orderDetails.Count == 0)
+        {
+            <p>No products in this order.</p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var detail in orderDetails)
+                    {
+                        <tr>
+                            <td>@(detail.Product?.Name ?? "No Product")</td>
+                            <td>@detail.Quantity</td>
+                            <td>@detail.Subtotal</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <div class="alert alert-warning">
+                Deleting this order will return the products back to stock.
+            </div>
+        }
+
+        <EditForm method="post" Model="order" OnValidSubmit="DeleteOrder" FormName="delete" Enhance>
+            <button type="submit" class="btn btn-danger">Delete</button> |
+            <a href="/orders">Back to List</a>
+        </EditForm>
+    </div>
+}
+
+@code {
+    private Order? order;
+    private List<OrderDetail> orderDetails = new();
+
+    [SupplyParameterFromQuery]
+    private int OrderID { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        order = await context.Order
+            .Include(o => o.Customer)
+            .Include(o => o.Employee)
+            .FirstOrDefaultAsync(o => o.OrderID == OrderID);
+
+        if (order is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+            return;
+        }
+
+        orderDetails = await context.OrderDetail
+            .Include(od => od.Product)
+            .Where(od => od.OrderID == OrderID)
+            .ToListAsync();
+    }
+
+    private async Task DeleteOrder()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        var orderToDelete = await context.Order
+            .FirstOrDefaultAsync(o => o.OrderID == OrderID);
+
+        if (orderToDelete is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+            return;
+        }
+
+        var detailsToDelete = await context.OrderDetail
+            .Where(od => od.OrderID == OrderID)
+            .ToListAsync();
+
+        foreach (var detail in detailsToDelete)
+        {
+            var product = await context.Product
+                .FirstOrDefaultAsync(p => p.ProductID == detail.ProductID);
+
+            if (product is not null)
+            {
+                product.StockQuantity += detail.Quantity;
+                product.Availability = true;
+                product.LastModified = DateTime.Now;
+            }
+
+            context.OrderDetail.Remove(detail);
+        }
+
+        context.Order.Remove(orderToDelete);
+
+        await context.SaveChangesAsync();
+
+        NavigationManager.NavigateTo("/orders");
+    }
+}

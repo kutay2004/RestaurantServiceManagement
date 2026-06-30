@@ -1,0 +1,90 @@
+﻿@page "/orderdetails"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@implements IAsyncDisposable
+@inject IDbContextFactory<SengWebContext> DbFactory
+
+<PageTitle>Order Details</PageTitle>
+
+<h1>Order Details</h1>
+
+<p>
+    <a href="orderdetails/create">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>LastModified</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var orderDetail in orderDetails)
+        {
+            <tr style="@GetRowStyle(orderDetail.OrderID)">
+                <td><strong>Order #@orderDetail.OrderID</strong></td>
+
+                <td>@(orderDetail.Order?.Customer?.Name ?? "No Customer")</td>
+
+                <td>@(orderDetail.Product?.Name ?? "No Product")</td>
+
+                <td>@orderDetail.Quantity</td>
+
+                <td>@orderDetail.Subtotal</td>
+
+                <td>@orderDetail.LastModified</td>
+
+                <td>
+                    <a href="@($"orderdetails/edit?orderid={orderDetail.OrderID}&productid={orderDetail.ProductID}")">Edit</a> |
+                    <a href="@($"orderdetails/details?orderid={orderDetail.OrderID}&productid={orderDetail.ProductID}")">Details</a> |
+                    <a href="@($"orderdetails/delete?orderid={orderDetail.OrderID}&productid={orderDetail.ProductID}")">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private SengWebContext context = default!;
+    private List<OrderDetail> orderDetails = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        context = DbFactory.CreateDbContext();
+
+        orderDetails = await context.OrderDetail
+            .Include(orderDetail => orderDetail.Product)
+            .Include(orderDetail => orderDetail.Order)
+                .ThenInclude(order => order.Customer)
+            .OrderBy(orderDetail => orderDetail.OrderID)
+            .ThenBy(orderDetail => orderDetail.ProductID)
+            .ToListAsync();
+    }
+
+    private string GetRowStyle(int orderID)
+    {
+        return (orderID % 6) switch
+        {
+            0 => "background-color: #f8f9fa;",
+            1 => "background-color: #e7f1ff;",
+            2 => "background-color: #e8f8f5;",
+            3 => "background-color: #fff3cd;",
+            4 => "background-color: #fce4ec;",
+            5 => "background-color: #ede7f6;",
+            _ => ""
+        };
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await context.DisposeAsync();
+    }
+}

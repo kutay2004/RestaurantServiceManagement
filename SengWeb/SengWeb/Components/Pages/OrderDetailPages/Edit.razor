@@ -1,0 +1,197 @@
+﻿@page "/orderdetails/edit"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Edit Order Detail</PageTitle>
+
+<h1>Edit Order Detail</h1>
+
+<h4>Order Detail</h4>
+<hr />
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
+    </div>
+}
+
+@if (OrderDetail is null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-4">
+            <EditForm Model="FormModel" OnValidSubmit="UpdateOrderDetail" FormName="EditOrderDetailForm">
+                <DataAnnotationsValidator />
+                <ValidationSummary class="text-danger" />
+
+                <div class="mb-3">
+                    <label class="form-label">Order:</label>
+                    <input class="form-control" value="Order #@OrderDetail.OrderID" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Customer:</label>
+                    <input class="form-control" value="@(OrderDetail.Order?.Customer?.Name ?? "No Customer")" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Product:</label>
+                    <input class="form-control" value="@(OrderDetail.Product?.Name ?? "No Product")" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Current Subtotal:</label>
+                    <input class="form-control" value="@OrderDetail.Subtotal" disabled />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Quantity:</label>
+                    <InputNumber class="form-control" @bind-Value="FormModel.Quantity" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Last Modified:</label>
+                    <input class="form-control" value="@OrderDetail.LastModified" disabled />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+                <a href="/orderdetails" class="btn btn-secondary">Back to List</a>
+            </EditForm>
+        </div>
+    </div>
+}
+
+@code {
+    [SupplyParameterFromQuery]
+    public int OrderID { get; set; }
+
+    [SupplyParameterFromQuery]
+    public int ProductID { get; set; }
+
+    [SupplyParameterFromForm]
+    public OrderDetailEditModel FormModel { get; set; } = new();
+
+    public OrderDetail? OrderDetail { get; set; }
+
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        OrderDetail = await context.OrderDetail
+            .Include(od => od.Product)
+            .Include(od => od.Order)
+                .ThenInclude(o => o.Customer)
+            .FirstOrDefaultAsync(od =>
+                od.OrderID == OrderID &&
+                od.ProductID == ProductID);
+
+        if (OrderDetail is null)
+        {
+            NavigationManager.NavigateTo("/orderdetails");
+            return;
+        }
+
+        if (FormModel.Quantity == 0)
+        {
+            FormModel.Quantity = OrderDetail.Quantity;
+        }
+    }
+
+    private async Task UpdateOrderDetail()
+    {
+        errorMessage = null;
+
+        if (FormModel.Quantity <= 0)
+        {
+            errorMessage = "Quantity must be greater than 0.";
+            return;
+        }
+
+        using var context = DbFactory.CreateDbContext();
+
+        var orderDetail = await context.OrderDetail
+            .FirstOrDefaultAsync(od =>
+                od.OrderID == OrderID &&
+                od.ProductID == ProductID);
+
+        if (orderDetail is null)
+        {
+            NavigationManager.NavigateTo("/orderdetails");
+            return;
+        }
+
+        var product = await context.Product
+            .FirstOrDefaultAsync(p => p.ProductID == ProductID);
+
+        if (product is null)
+        {
+            errorMessage = "Product could not be found.";
+            return;
+        }
+
+        var order = await context.Order
+            .FirstOrDefaultAsync(o => o.OrderID == OrderID);
+
+        if (order is null)
+        {
+            errorMessage = "Order could not be found.";
+            return;
+        }
+
+        int oldQuantity = orderDetail.Quantity;
+        int newQuantity = FormModel.Quantity;
+        int quantityDifference = newQuantity - oldQuantity;
+
+        if (quantityDifference > 0 && product.StockQuantity < quantityDifference)
+        {
+            errorMessage = $"Not enough stock. Available stock: {product.StockQuantity}";
+            return;
+        }
+
+        decimal oldSubtotal = orderDetail.Subtotal;
+        decimal newSubtotal = product.Price * newQuantity;
+
+        if (quantityDifference > 0)
+        {
+            product.StockQuantity -= quantityDifference;
+        }
+        else if (quantityDifference < 0)
+        {
+            product.StockQuantity += Math.Abs(quantityDifference);
+        }
+
+        product.Availability = product.StockQuantity > 0;
+        product.LastModified = DateTime.Now;
+
+        orderDetail.Quantity = newQuantity;
+        orderDetail.Subtotal = newSubtotal;
+        orderDetail.LastModified = DateTime.Now;
+
+        order.TotalAmount = order.TotalAmount - oldSubtotal + newSubtotal;
+
+        if (order.TotalAmount < 0)
+        {
+            order.TotalAmount = 0;
+        }
+
+        order.LastModified = DateTime.Now;
+
+        await context.SaveChangesAsync();
+
+        NavigationManager.NavigateTo("/orderdetails");
+    }
+
+    public class OrderDetailEditModel
+    {
+        public int Quantity { get; set; }
+    }
+}

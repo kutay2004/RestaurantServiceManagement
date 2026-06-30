@@ -1,0 +1,71 @@
+﻿@page "/products"
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using DataAccess
+@using SengWeb.Data
+@implements IAsyncDisposable
+@inject IDbContextFactory<SengWeb.Data.SengWebContext> DbFactory
+
+<PageTitle>Products</PageTitle>
+
+<h1>Products</h1>
+
+<p>
+    <a href="products/create">Create New</a>
+</p>
+
+<QuickGrid Class="table" Items="products">
+    <PropertyColumn Property="product => product.ProductID" Title="ProductID" />
+    <PropertyColumn Property="product => product.Name" Title="Name" />
+    <PropertyColumn Property="product => product.Price" Title="Price" />
+    <PropertyColumn Property="product => product.StockQuantity" Title="StockQuantity" />
+
+    <TemplateColumn Title="Stock Status" Context="product">
+        @if (!product.Availability)
+        {
+            <span class="badge bg-secondary">Not Available</span>
+        }
+        else if (product.StockQuantity == 0)
+        {
+            <span class="badge bg-danger">Out of Stock</span>
+        }
+        else if (product.StockQuantity <= 5)
+        {
+            <span class="badge bg-warning text-dark">Low Stock</span>
+        }
+        else
+        {
+            <span class="badge bg-success">Available</span>
+        }
+    </TemplateColumn>
+
+    <TemplateColumn Title="Category" Context="product">
+        @(product.Category != null ? product.Category.Name : "No Category")
+    </TemplateColumn>
+
+    <PropertyColumn Property="product => product.LastModified" Title="LastModified" />
+
+    <TemplateColumn Context="product">
+        <a href="@($"products/edit?productid={product.ProductID}")">Edit</a> |
+        <a href="@($"products/details?productid={product.ProductID}")">Details</a> |
+        <a href="@($"products/delete?productid={product.ProductID}")">Delete</a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private SengWebContext context = default!;
+    private IQueryable<Product> products = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+
+        products = context.Product
+            .Include(product => product.Category);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await context.DisposeAsync();
+    }
+}

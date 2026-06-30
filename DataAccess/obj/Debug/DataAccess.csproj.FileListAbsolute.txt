@@ -1,0 +1,12 @@
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\ASUS\source\repos\CMPE232\DataAccess\obj\Debug\DataAccess.pdb

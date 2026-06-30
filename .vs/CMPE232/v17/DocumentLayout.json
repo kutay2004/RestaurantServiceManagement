@@ -1,0 +1,699 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|C:\\Users\\ASUS\\source\\repos\\CMPE232\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|\u00C7\u00F6z\u00FCm \u00D6\u011Feleri{AC80F682-3D55-C8F8-4895-A4A9EDD49434}|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\sengweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\sengweb.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|C:\\Users\\ASUS\\source\\repos\\CMPE232\\dataaccess\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderdetailpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderdetailpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderpages\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderpages\\details.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderdetailpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderdetailpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderpages\\delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderpages\\delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\productpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\productpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderdetailpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderdetailpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\orderdetailpages\\delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\orderdetailpages\\delete.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\productpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\productpages\\edit.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\productpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\productpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\employeepages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\employeepages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\customerpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\customerpages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\categorypages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\categorypages\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|C:\\Users\\ASUS\\source\\repos\\CMPE232\\dataaccess\\seng.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\seng.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|C:\\Users\\ASUS\\source\\repos\\CMPE232\\dataaccess\\seng.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\seng.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\data\\sengwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\data\\sengwebcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|C:\\Users\\ASUS\\source\\repos\\CMPE232\\dataaccess\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3DD37907-0EE8-4CA7-A79E-50A619688088}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\employeepages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\employeepages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\customerpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\customerpages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\components\\pages\\categorypages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\components\\pages\\categorypages\\create.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\categories_old\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\categories_old\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|c:\\users\\asus\\source\\repos\\cmpe232\\sengweb\\sengweb\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E4E6BF6-9711-4E3C-95CB-C83A8C09B4A6}|SengWeb\\SengWeb\\SengWeb.csproj|solutionrelative:sengweb\\sengweb\\pages\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Dockerfile",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Dockerfile",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Dockerfile",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-30T09:32:06.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-06-30T09:17:16.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Properties\\launchSettings.json",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-30T09:08:17.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Index.razor",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T14:09:58.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Create.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T14:08:24.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T14:30:30.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Create.razor",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:41:08.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.Config",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\App.Config",
+              "RelativeDocumentMoniker": "DataAccess\\App.Config",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\App.Config",
+              "RelativeToolTip": "DataAccess\\App.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-05-16T07:49:09.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SengWeb.csproj",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\SengWeb.csproj",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+              "RelativeToolTip": "SengWeb\\SengWeb\\SengWeb.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-05-12T09:26:24.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Details.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Details.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Details.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Details.razor",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAowGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T11:49:37.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\appsettings.json",
+              "RelativeToolTip": "SengWeb\\SengWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-13T12:42:08.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Create.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:42:23.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Index.razor",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T05:19:21.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Delete.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Delete.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Delete.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Delete.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Delete.razor",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAowIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T11:53:22.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowDQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:29:40.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Index.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T05:15:09.001Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Index.razor",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T05:16:10.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Delete.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Delete.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Delete.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Delete.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Delete.razor",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAowH8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T11:24:21.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Edit.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Edit.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Edit.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Edit.razor",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAowIwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T11:59:16.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderPages\\Index.razor",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-16T05:17:18.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Edit.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Edit.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Edit.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\OrderDetailPages\\Edit.razor",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAAwMQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T14:16:05.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Edit.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Edit.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Edit.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Edit.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\ProductPages\\Edit.razor",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAowHwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-25T11:17:13.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Seng.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\Seng.edmx",
+              "RelativeDocumentMoniker": "DataAccess\\Seng.edmx",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\Seng.edmx [Diagram1]",
+              "RelativeToolTip": "DataAccess\\Seng.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-05-12T09:17:34.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Seng.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\Seng.edmx.diagram",
+              "RelativeDocumentMoniker": "DataAccess\\Seng.edmx.diagram",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\Seng.edmx.diagram",
+              "RelativeToolTip": "DataAccess\\Seng.edmx.diagram",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-05-15T14:55:05.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SengWebContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Data\\SengWebContext.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Data\\SengWebContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Data\\SengWebContext.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Data\\SengWebContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:24:03.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Index.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Index.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Index.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Index.razor",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:05:18.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAzwCcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:45:16.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:45:16.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "DataAccess\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\OrderDetail.cs",
+              "RelativeToolTip": "DataAccess\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-13T14:06:27.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Program.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Program.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAqwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:24:03.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Details.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:45:16.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAzwDsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:45:17.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\CustomerPages\\Create.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:37:03.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\EmployeePages\\Create.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:41:43.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAQwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:45:16.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Create.razor",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Create.razor",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Create.razor",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Create.razor",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Components\\Pages\\CategoryPages\\Create.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-13T13:04:12.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:45:17.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:45:17.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Edit.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:45:16.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:45:17.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml.cs",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\Categories_old\\Create.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T10:45:16.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "SengWeb\\SengWeb\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\Pages\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "SengWeb\\SengWeb\\Pages\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-12T10:24:05.008Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

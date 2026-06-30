@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  sengweb:
+    build:
+      context: .
+      dockerfile: SengWeb/SengWeb/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__SengWebContext: "Server=host.docker.internal,1433;Database=RestaurantServiceManagement;User Id=sa;Password=YourStrongPass123!;TrustServerCertificate=True;Encrypt=False;MultipleActiveResultSets=True"
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: restaurant_sql
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrongPass123!"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+
+volumes:
+  sql_data:

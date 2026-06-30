@@ -1,0 +1,199 @@
+﻿@page "/orderdetails/create"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Add Product to Order</PageTitle>
+
+<h1>Add Product to Order</h1>
+
+<h2>Order Detail</h2>
+<hr />
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @errorMessage
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-5">
+        <EditForm method="post" Model="OrderDetail" OnValidSubmit="AddOrderDetail" FormName="create" Enhance>
+            <DataAnnotationsValidator />
+            <ValidationSummary class="text-danger" role="alert" />
+
+            <div class="mb-3">
+                <label for="orderid" class="form-label">Order:</label>
+                <InputSelect id="orderid" TValue="int" @bind-Value="OrderDetail.OrderID" class="form-control">
+                    <option value="0">Select Order</option>
+                    @foreach (var order in orders)
+                    {
+                        <option value="@order.OrderID">
+                            Order #@order.OrderID - @(order.Customer?.Name ?? "No Customer") - Total: @order.TotalAmount
+                        </option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => OrderDetail.OrderID" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label for="productid" class="form-label">Product:</label>
+                <InputSelect id="productid" TValue="int" @bind-Value="OrderDetail.ProductID" class="form-control">
+                    <option value="0">Select Product</option>
+                    @foreach (var product in products)
+                    {
+                        <option value="@product.ProductID">
+                            @product.Name - @product.Price TL - Stock: @product.StockQuantity
+                        </option>
+                    }
+                </InputSelect>
+                <ValidationMessage For="() => OrderDetail.ProductID" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity:</label>
+                <InputNumber id="quantity" @bind-Value="OrderDetail.Quantity" class="form-control" />
+                <ValidationMessage For="() => OrderDetail.Quantity" class="text-danger" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Subtotal:</label>
+                <input value="Calculated automatically" class="form-control" disabled />
+                <small class="text-muted">Subtotal will be calculated as Product Price × Quantity.</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create</button>
+        </EditForm>
+    </div>
+</div>
+
+<div>
+    <a href="/orderdetails">Back to List</a>
+</div>
+
+@code {
+    [SupplyParameterFromQuery]
+    private int OrderID { get; set; }
+
+    [SupplyParameterFromForm]
+    private OrderDetail OrderDetail { get; set; } = new()
+    {
+        Quantity = 1,
+        LastModified = DateTime.Now
+    };
+
+    private List<Order> orders = new();
+    private List<Product> products = new();
+    private string? errorMessage;
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        orders = await context.Order
+            .Include(order => order.Customer)
+            .Include(order => order.Employee)
+            .OrderByDescending(order => order.OrderID)
+            .ToListAsync();
+
+        products = await context.Product
+            .Include(product => product.Category)
+            .Where(product => product.Availability == true && product.StockQuantity > 0)
+            .OrderBy(product => product.Name)
+            .ToListAsync();
+
+        if (OrderID != 0)
+        {
+            OrderDetail.OrderID = OrderID;
+        }
+    }
+
+    private async Task AddOrderDetail()
+    {
+        errorMessage = null;
+
+        if (OrderDetail.OrderID == 0)
+        {
+            errorMessage = "Please select an order.";
+            return;
+        }
+
+        if (OrderDetail.ProductID == 0)
+        {
+            errorMessage = "Please select a product.";
+            return;
+        }
+
+        if (OrderDetail.Quantity <= 0)
+        {
+            errorMessage = "Quantity must be greater than 0.";
+            return;
+        }
+
+        using var context = DbFactory.CreateDbContext();
+
+        var order = await context.Order
+            .FirstOrDefaultAsync(order => order.OrderID == OrderDetail.OrderID);
+
+        if (order is null)
+        {
+            errorMessage = "Selected order could not be found.";
+            return;
+        }
+
+        var product = await context.Product
+            .FirstOrDefaultAsync(product => product.ProductID == OrderDetail.ProductID);
+
+        if (product is null)
+        {
+            errorMessage = "Selected product could not be found.";
+            return;
+        }
+
+        if (product.StockQuantity < OrderDetail.Quantity)
+        {
+            errorMessage = $"Not enough stock. Available stock: {product.StockQuantity}";
+            return;
+        }
+
+        var existingOrderDetail = await context.OrderDetail
+            .FirstOrDefaultAsync(orderDetail =>
+                orderDetail.OrderID == OrderDetail.OrderID &&
+                orderDetail.ProductID == OrderDetail.ProductID);
+
+        var addedSubtotal = product.Price * OrderDetail.Quantity;
+
+        if (existingOrderDetail is not null)
+        {
+            existingOrderDetail.Quantity += OrderDetail.Quantity;
+            existingOrderDetail.Subtotal += addedSubtotal;
+            existingOrderDetail.LastModified = DateTime.Now;
+        }
+        else
+        {
+            OrderDetail.Subtotal = addedSubtotal;
+            OrderDetail.LastModified = DateTime.Now;
+
+            context.OrderDetail.Add(OrderDetail);
+        }
+
+        product.StockQuantity -= OrderDetail.Quantity;
+
+        if (product.StockQuantity == 0)
+        {
+            product.Availability = false;
+        }
+
+        product.LastModified = DateTime.Now;
+
+        order.TotalAmount += addedSubtotal;
+        order.LastModified = DateTime.Now;
+
+        await context.SaveChangesAsync();
+
+        NavigationManager.NavigateTo($"/orders/details?orderid={OrderDetail.OrderID}");
+    }
+}

@@ -1,0 +1,56 @@
+﻿@page "/orders"
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using DataAccess
+@using SengWeb.Data
+@implements IAsyncDisposable
+@inject IDbContextFactory<SengWeb.Data.SengWebContext> DbFactory
+
+<PageTitle>Orders</PageTitle>
+
+<h1>Orders</h1>
+
+<p>
+    <a href="orders/create">Create New</a>
+</p>
+
+<QuickGrid Class="table" Items="orders">
+    <PropertyColumn Property="order => order.OrderID" Title="OrderID" />
+    <PropertyColumn Property="order => order.Date" Title="Date" />
+    <PropertyColumn Property="order => order.TotalAmount" Title="TotalAmount" />
+
+    <TemplateColumn Title="Customer" Context="order">
+        @(order.Customer != null ? order.Customer.Name : "No Customer")
+    </TemplateColumn>
+
+    <TemplateColumn Title="Employee" Context="order">
+        @(order.Employee != null ? order.Employee.Name : "No Employee")
+    </TemplateColumn>
+
+    <PropertyColumn Property="order => order.LastModified" Title="LastModified" />
+
+    <TemplateColumn Context="order">
+        <a href="@($"orders/edit?orderid={order.OrderID}")">Edit</a> |
+        <a href="@($"orders/details?orderid={order.OrderID}")">Details</a> |
+        <a href="@($"orders/delete?orderid={order.OrderID}")">Delete</a>
+    </TemplateColumn>
+</QuickGrid>
+
+@code {
+    private SengWebContext context = default!;
+    private IQueryable<Order> orders = default!;
+
+    protected override void OnInitialized()
+    {
+        context = DbFactory.CreateDbContext();
+
+        orders = context.Order
+            .Include(order => order.Customer)
+            .Include(order => order.Employee);
+    }
+
+    public async ValueTask DisposeAsync()
+    {
+        await context.DisposeAsync();
+    }
+}

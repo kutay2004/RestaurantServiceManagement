@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8f627db68cd2499cb31ece927358e5d0" Name="Diagram1">
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.Category" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.Customer" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.Employee" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.Product" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="RestaurantServiceManagementModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantServiceManagementModel.FK_Orders_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="RestaurantServiceManagementModel.FK_Orders_Employee" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="RestaurantServiceManagementModel.OrderDetail" Width="1.5" PointX="5.25" PointY="5.25" />
+        <AssociationConnector Association="RestaurantServiceManagementModel.FK_OrderDetail_Order" />
+        <AssociationConnector Association="RestaurantServiceManagementModel.FK_OrderDetail_Product" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

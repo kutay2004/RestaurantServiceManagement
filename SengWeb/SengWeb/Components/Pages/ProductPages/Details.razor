@@ -1,0 +1,56 @@
+﻿@page "/products/details"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@inject IDbContextFactory<SengWeb.Data.SengWebContext> DbFactory
+@inject NavigationManager NavigationManager
+
+<PageTitle>Details</PageTitle>
+
+<h1>Details</h1>
+
+<div>
+    <h2>Product</h2>
+    <hr />
+    @if (product is null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <dl class="row">
+            <dt class="col-sm-2">Name</dt>
+            <dd class="col-sm-10">@product.Name</dd>
+            <dt class="col-sm-2">Price</dt>
+            <dd class="col-sm-10">@product.Price</dd>
+            <dt class="col-sm-2">StockQuantity</dt>
+            <dd class="col-sm-10">@product.StockQuantity</dd>
+            <dt class="col-sm-2">Availability</dt>
+            <dd class="col-sm-10">@product.Availability</dd>
+            <dt class="col-sm-2">CategoryID</dt>
+            <dd class="col-sm-10">@product.CategoryID</dd>
+            <dt class="col-sm-2">LastModified</dt>
+            <dd class="col-sm-10">@product.LastModified</dd>
+        </dl>
+        <div>
+            <a href="@($"/products/edit?productid={product.ProductID}")">Edit</a> |
+            <a href="@($"/products")">Back to List</a>
+        </div>
+    }
+</div>
+
+@code {
+    private Product? product;
+
+    [SupplyParameterFromQuery]
+    private int ProductID { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+        product = await context.Product.FirstOrDefaultAsync(m => m.ProductID == ProductID);
+
+        if (product is null)
+        {
+            NavigationManager.NavigateTo("notfound");
+        }
+    }
+}

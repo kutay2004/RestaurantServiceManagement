@@ -1,0 +1,125 @@
+﻿@page "/"
+@using Microsoft.EntityFrameworkCore
+@using DataAccess
+@using SengWeb.Data
+@inject IDbContextFactory<SengWebContext> DbFactory
+
+<PageTitle>Home</PageTitle>
+
+<div style="padding: 30px;">
+    <h1>Restaurant Service Management</h1>
+
+    <p>Welcome to our Restaurant Service Management system.</p>
+
+    <div class="row mb-4">
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Total Orders</h5>
+                    <h2>@totalOrders</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Total Revenue</h5>
+                    <h2>@totalRevenue.ToString("0.00") TL</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Total Products</h5>
+                    <h2>@totalProducts</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Low Stock Products</h5>
+                    <h2>@lowStockProducts</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Recent Orders</h3>
+
+    @if (recentOrders.Count == 0)
+    {
+        <p>No orders found.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Order</th>
+                    <th>Customer</th>
+                    <th>Employee</th>
+                    <th>Total Amount</th>
+                    <th>Last Modified</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var order in recentOrders)
+                {
+                    <tr>
+                        <td>Order #@order.OrderID</td>
+                        <td>@(order.Customer?.Name ?? "No Customer")</td>
+                        <td>@(order.Employee?.Name ?? "No Employee")</td>
+                        <td>@order.TotalAmount.ToString("0.00") TL</td>
+                        <td>@order.LastModified</td>
+                        <td>
+                            <a href="@($"/orders/details?orderid={order.OrderID}")">Details</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <h3 class="mt-4">Restaurant Overview</h3>
+
+    <img src="/images/menu.png"
+         alt="Restaurant Menu"
+         style="max-width: 900px; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);" />
+</div>
+
+@code {
+    private int totalOrders;
+    private decimal totalRevenue;
+    private int totalProducts;
+    private int lowStockProducts;
+
+    private List<Order> recentOrders = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        using var context = DbFactory.CreateDbContext();
+
+        totalOrders = await context.Order.CountAsync();
+
+        totalRevenue = await context.Order
+            .SumAsync(order => order.TotalAmount);
+
+        totalProducts = await context.Product.CountAsync();
+
+        lowStockProducts = await context.Product
+            .CountAsync(product => product.StockQuantity <= 5);
+
+        recentOrders = await context.Order
+            .Include(order => order.Customer)
+            .Include(order => order.Employee)
+            .OrderByDescending(order => order.LastModified)
+            .Take(5)
+            .ToListAsync();
+    }
+}
