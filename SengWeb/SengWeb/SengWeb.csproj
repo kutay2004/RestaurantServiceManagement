@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\DataAccess\DataAccess.csproj" />
     <ProjectReference Include="..\SengWeb.Client\SengWeb.Client.csproj" />
+
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.23" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.24" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.23" />
@@ -18,6 +18,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\DataAccess\Category.cs" Link="DataAccessModels\Category.cs" />
+    <Compile Include="..\..\DataAccess\Customer.cs" Link="DataAccessModels\Customer.cs" />
+    <Compile Include="..\..\DataAccess\Employee.cs" Link="DataAccessModels\Employee.cs" />
+    <Compile Include="..\..\DataAccess\Order.cs" Link="DataAccessModels\Order.cs" />
+    <Compile Include="..\..\DataAccess\OrderDetail.cs" Link="DataAccessModels\OrderDetail.cs" />
+    <Compile Include="..\..\DataAccess\Product.cs" Link="DataAccessModels\Product.cs" />
   </ItemGroup>
 
 </Project>

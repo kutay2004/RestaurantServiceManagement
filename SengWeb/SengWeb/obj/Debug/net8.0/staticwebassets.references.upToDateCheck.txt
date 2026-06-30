@@ -67,3 +67,4 @@ C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb.Client\obj\Debug\net8.0\stati
 C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb.Client\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb.Client\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\OneDrive\Masaüstü\CMPE232\SengWeb\SengWeb.Client\obj\Debug\net8.0\staticwebassets.build.json

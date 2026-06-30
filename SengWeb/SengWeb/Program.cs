@@ -19,6 +19,34 @@ builder.Services.AddRazorComponents()
 
 var app = builder.Build();
 
+// Database yoksa oluştur
+using (var scope = app.Services.CreateScope())
+{
+    var dbFactory = scope.ServiceProvider.GetRequiredService<IDbContextFactory<SengWebContext>>();
+
+    var retries = 10;
+
+    while (retries > 0)
+    {
+        try
+        {
+            using var db = dbFactory.CreateDbContext();
+            db.Database.EnsureCreated();
+            break;
+        }
+        catch
+        {
+            retries--;
+            Thread.Sleep(3000);
+
+            if (retries == 0)
+            {
+                throw;
+            }
+        }
+    }
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

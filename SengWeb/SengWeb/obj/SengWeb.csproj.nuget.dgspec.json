@@ -1,33 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj": {}
+    "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj",
-        "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj",
-        "UsingMicrosoftNETSdk": false,
-        "frameworks": {
-          "net48": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net48": {}
-      }
-    },
-    "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj",
         "projectName": "SengWeb.Client",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj": {
+    "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
         "projectName": "SengWeb",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+        "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -142,11 +126,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj"
-              },
-              "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj"
+              "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj"
               }
             }
           }

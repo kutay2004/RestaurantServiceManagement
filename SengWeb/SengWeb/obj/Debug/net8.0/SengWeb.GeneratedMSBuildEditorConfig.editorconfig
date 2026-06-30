@@ -17,189 +17,189 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SengWeb
 build_property.RootNamespace = SengWeb
-build_property.ProjectDir = C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb\
+build_property.ProjectDir = C:\Users\ASUS\OneDrive\Masaüstü\CMPE232\SengWeb\SengWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ASUS\source\repos\CMPE232\SengWeb\SengWeb
+build_property.MSBuildProjectDirectory = C:\Users\ASUS\OneDrive\Masaüstü\CMPE232\SengWeb\SengWeb
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/App.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVBhZ2VzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVBhZ2VzXERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVBhZ2VzXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVBhZ2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CategoryPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yeVBhZ2VzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclBhZ2VzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclBhZ2VzXERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclBhZ2VzXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclBhZ2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/CustomerPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDdXN0b21lclBhZ2VzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZVBhZ2VzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZVBhZ2VzXERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZVBhZ2VzXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZVBhZ2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/EmployeePages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbXBsb3llZVBhZ2VzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/Error.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/Home.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlckRldGFpbFBhZ2VzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlckRldGFpbFBhZ2VzXERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlckRldGFpbFBhZ2VzXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlckRldGFpbFBhZ2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderDetailPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlckRldGFpbFBhZ2VzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2VzXENyZWF0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2VzXERlbGV0ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2VzXERldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2VzXEVkaXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/OrderPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPcmRlclBhZ2VzXEluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Create.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Create.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UGFnZXNcQ3JlYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Delete.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Delete.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UGFnZXNcRGVsZXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Details.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Details.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UGFnZXNcRGV0YWlscy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Edit.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Edit.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UGFnZXNcRWRpdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Index.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/ProductPages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Pages/Weather.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Routes.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/_Imports.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Layout/MainLayout.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-qa2kn4oqqs
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Components/Layout/NavMenu.razor]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-8dg4rcriw2
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Create.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc19vbGRcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Delete.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc19vbGRcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Details.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc19vbGRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Edit.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc19vbGRcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Index.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/Categories_old/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmllc19vbGRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ASUS/source/repos/CMPE232/SengWeb/SengWeb/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/ASUS/OneDrive/Masaüstü/CMPE232/SengWeb/SengWeb/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

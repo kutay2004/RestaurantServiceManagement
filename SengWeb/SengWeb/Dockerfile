@@ -3,7 +3,6 @@ WORKDIR /src
 
 COPY ["SengWeb/SengWeb/SengWeb.csproj", "SengWeb/SengWeb/"]
 COPY ["SengWeb/SengWeb.Client/SengWeb.Client.csproj", "SengWeb/SengWeb.Client/"]
-COPY ["DataAccess/DataAccess.csproj", "DataAccess/"]
 
 RUN dotnet restore "SengWeb/SengWeb/SengWeb.csproj"
 

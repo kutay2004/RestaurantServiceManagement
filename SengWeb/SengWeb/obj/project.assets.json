@@ -2961,15 +2961,6 @@
           "lib/netcoreapp2.1/_._": {}
         }
       },
-      "DataAccess/1.0.0": {
-        "type": "project",
-        "compile": {
-          "bin/placeholder/DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataAccess.dll": {}
-        }
-      },
       "SengWeb.Client/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -8167,11 +8158,6 @@
         "version.txt"
       ]
     },
-    "DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../../DataAccess/DataAccess.csproj",
-      "msbuildProject": "../../DataAccess/DataAccess.csproj"
-    },
     "SengWeb.Client/1.0.0": {
       "type": "project",
       "path": "../SengWeb.Client/SengWeb.Client.csproj",
@@ -8180,7 +8166,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "DataAccess >= 1.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.23",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 8.0.24",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 8.0.23",
@@ -8197,11 +8182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
       "projectName": "SengWeb",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
+      "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\SengWeb.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8222,11 +8207,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\DataAccess\\DataAccess.csproj"
-            },
-            "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\source\\repos\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj"
+            "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\OneDrive\\Masaüstü\\CMPE232\\SengWeb\\SengWeb.Client\\SengWeb.Client.csproj"
             }
           }
         }
